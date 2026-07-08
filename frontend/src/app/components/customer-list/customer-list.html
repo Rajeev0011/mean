@@ -5,4 +5,11 @@
     <button matButton="elevated" [routerLink]="`/create`">
         Create New Customer
     </button>
+    <div>
+        <div *ngFor="let customer of customers" class=" mat-elevationz2 p-2 mb-2 mt-2 my-2 d-flex align-items-center rounded border">
+            {{ customer.name }}
+            {{ customer.email }}
+            {{ customer.phone }}
+        </div>
+    </div>
 </div>
